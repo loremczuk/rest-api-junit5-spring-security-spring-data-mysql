@@ -24,7 +24,7 @@ public class EmployeeDataController {
     }
 
     @GetMapping
-    public Object[] getEmployeeDataWithoutSalary() {
+    public Object[] getEmployeeDataWithLimitedInfo() {
 
         return employeeRepository.findEmployeeDataWithLimitedInfo();
 
@@ -49,7 +49,7 @@ public class EmployeeDataController {
                                                       @PathVariable String position) {
 
 
-        Employee employee = employeeRepository.findById(employeeId).orElseThrow(() -> new EntityNotFoundException("Username not found"));
+        Employee employee = employeeRepository.findById(employeeId).orElseThrow(() -> new EntityNotFoundException("User not found"));
 
         employee.setPosition(position);
 
