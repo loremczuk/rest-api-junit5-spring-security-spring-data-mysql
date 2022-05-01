@@ -37,7 +37,7 @@ public class EmployeeDataController {
 
     }
 
-    @GetMapping("credentials")
+    @GetMapping("/credentials")
     public List<LoginCredentials> getAllLoginCredentials() {
 
         return loginCredentialsRepository.findAll();
