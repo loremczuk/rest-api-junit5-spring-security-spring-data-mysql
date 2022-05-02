@@ -14,11 +14,8 @@ import pl.oremczuk.restapijunit5springsecurityspringdatamysql.models.LoginCreden
 import pl.oremczuk.restapijunit5springsecurityspringdatamysql.repositories.EmployeeRepository;
 import pl.oremczuk.restapijunit5springsecurityspringdatamysql.repositories.LoginCredentialsRepository;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 @ExtendWith(SpringExtension.class)
 @DataJpaTest
